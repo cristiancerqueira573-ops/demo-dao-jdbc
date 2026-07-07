@@ -17,7 +17,10 @@ public class Department implements Serializable {
 		this.id = id;
 		this.name = name;
 	}
+	
+	public Department() {
 
+	}
 
 
 	public Integer getId() {
@@ -49,6 +52,7 @@ public class Department implements Serializable {
 		return Objects.hash(id);
 	}
 
+	
 
 
 	@Override

@@ -15,12 +15,12 @@ public class Program {
 		Department obj = new Department(1,"Books");
 		
 		SimpleDateFormat sdf = new SimpleDateFormat("dd/mm/YYYY");
-		
-		Seller obj1 = new Seller(1, "João", "joaoPedro@gmail.com", new Date(), 2000.0,obj);
-		
 		SellerDao sellerDao = DaoFactory.createSellerDao();
 		
-		System.out.println(obj1);
+		Seller seller = sellerDao.findById(3);
+		
+		
+		System.out.println(seller);
 	}
 
 }

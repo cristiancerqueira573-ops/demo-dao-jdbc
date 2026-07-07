@@ -20,6 +20,9 @@ public class Seller implements Serializable {
 	
 	
 	
+	public Seller() {
+		
+	}
 	
 	public Seller(Integer id, String name, String email, Date birthDate, Double baseSalary,Department department) {
 		this.id = id;
@@ -80,6 +83,15 @@ public class Seller implements Serializable {
 		this.baseSalary = baseSalary;
 	}
 
+
+	
+	public Department getDepartment() {
+		return department;
+	}
+
+	public void setDepartment(Department department) {
+		this.department = department;
+	}
 
 	@Override
 	public int hashCode() {
