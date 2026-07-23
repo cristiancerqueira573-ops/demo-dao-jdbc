@@ -27,6 +27,8 @@ public class Program {
 		for( Seller seller1 : list) {
 			System.out.println(seller1);
 			
+			
+	
 		
 	}
 		System.out.println("=== Test 3: seller findAll ====");
